@@ -5,6 +5,7 @@ account: bioestatisticas
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 306254
-bundleId: 3721966
+bundleId: 5437745
 url: https://bioestatisticas.shinyapps.io/appue28/
-when: 1602271664.87422
+when: 1641411095.73043
+lastSyncTime: 1641411095.73043
