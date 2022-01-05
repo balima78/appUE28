@@ -5,7 +5,13 @@ account: bioestatisticas
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 306254
+<<<<<<< HEAD
 bundleId: 5437745
 url: https://bioestatisticas.shinyapps.io/appue28/
 when: 1641411095.73043
 lastSyncTime: 1641411095.73043
+=======
+bundleId: 5100151
+url: https://bioestatisticas.shinyapps.io/appue28/
+when: 1633293485.34554
+>>>>>>> 66cb7f0daaf93cedb8ebab47dfd1fbd705a08327

@@ -61,7 +61,7 @@ shinyUI(fluidPage(
                               textOutput("text1"),
                               
                               sliderInput("num", "",
-                                          min = 2003, max = 2019,
+                                          min = 2003, max = 2020,
                                           value = 2009, step = 1, sep = "",
                                           animate = animationOptions(interval = 2500, loop = TRUE))),
     
