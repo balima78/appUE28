@@ -25,7 +25,7 @@ shinyUI(fluidPage(
   hr(),
   
   tagList(
-    navbarPage(theme = shinytheme("cerulean"),
+    navbarPage(#theme = shinytheme("celurean"),
                title=div(img(src="openDoor1.jpg"), "TxOR"),
                tabPanel("Tx Renal", icon = icon("heartbeat"),
                         h3("Transplante Renal"),
@@ -61,7 +61,7 @@ shinyUI(fluidPage(
                               textOutput("text1"),
                               
                               sliderInput("num", "",
-                                          min = 2003, max = 2020,
+                                          min = 2003, max = 2021,
                                           value = 2009, step = 1, sep = "",
                                           animate = animationOptions(interval = 2500, loop = TRUE))),
     
