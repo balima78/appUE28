@@ -21,7 +21,7 @@ dadores <- dadores %>% filter(ano > 2002)
 
 
 # dados de GODT
-godt<- read.csv2("GODT20002021.csv")
+godt<- read.csv2("GODT20002022.csv")
 names(godt)<-c("X","pais","ano","Populacao","DadoresCadaver","Tx_DadorCadaver","Tx_DadorVivo", "Tx_total", "DCpmh","TxDCpmh","TxDVpmh","transparencia")
 
 ## Ordem dadores cadaver #########
@@ -34,9 +34,9 @@ dadores_2 <- dadores %>%
   mutate(ano = as.numeric(ano) - 0.25)
 # atribuir cores a alguns paises
 coresdad <- c("Spain" = "#a67c00"
-             , "Croatia" = "#bf9b30"
+             , "Slovenia" = "#bf9b30"
              , "Belgium" = "#ffbf00"
-             , "Czech Republic" = "#ffcf40"
+             , "Italy" = "#ffcf40"
              , "Portugal" = "red")
 outrospaises <- dadores %>% distinct(pais) %>% 
   filter(!pais %in% names(coresdad)) %>% .$pais
@@ -77,8 +77,8 @@ ld28_2 <- ld28 %>%
 
 # atribuir cores a alguns paises
 coresld <- c("Holanda" = "#003300"
-           , "Suecia" = "#00cc00"
-           , "Dinamarca" = "#006600"
+           , "Franca" = "#00cc00"
+           , "Alemanha" = "#006600"
            , "Reino Unido" = "#009900"
            , "Portugal" = "red")
 outrospaises <- ld28 %>% distinct(pais) %>% filter(!pais %in% names(coresld)) %>% .$pais
@@ -117,9 +117,9 @@ cd28_2 <- cd28 %>%
 
 # atribuir cores a alguns paises
 cores <- c("Espanha" = "#011f4b"
-           , "Franca" = "#03396c"
-           , "Rep Checa" = "#6497b1"
-           , "Finlandia" = "#b3cde0"
+           , "Belgica" = "#03396c"
+           , "Eslovenia" = "#6497b1"
+           , "Italia" = "#b3cde0"
            , "Portugal" = "red")
 outrospaises <- cd28 %>% distinct(pais) %>% filter(!pais %in% names(cores)) %>% .$pais
 cores <- c(cores, setNames(rep("gray", length(outrospaises)), outrospaises))
