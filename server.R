@@ -34,7 +34,7 @@ dadores_2 <- dadores %>%
   mutate(ano = as.numeric(ano) - 0.25)
 # atribuir cores a alguns paises
 coresdad <- c("Spain" = "#a67c00"
-             , "Slovenia" = "#bf9b30"
+             , "Czech Rep" = "#bf9b30"
              , "Belgium" = "#ffbf00"
              , "Italy" = "#ffcf40"
              , "Portugal" = "red")
@@ -77,8 +77,8 @@ ld28_2 <- ld28 %>%
 
 # atribuir cores a alguns paises
 coresld <- c("Holanda" = "#003300"
-           , "Franca" = "#00cc00"
-           , "Alemanha" = "#006600"
+           , "Dinamarca" = "#00cc00"
+           , "Chipre" = "#006600"
            , "Reino Unido" = "#009900"
            , "Portugal" = "red")
 outrospaises <- ld28 %>% distinct(pais) %>% filter(!pais %in% names(coresld)) %>% .$pais
@@ -118,8 +118,8 @@ cd28_2 <- cd28 %>%
 # atribuir cores a alguns paises
 cores <- c("Espanha" = "#011f4b"
            , "Belgica" = "#03396c"
-           , "Eslovenia" = "#6497b1"
-           , "Italia" = "#b3cde0"
+           , "Finlandia" = "#6497b1"
+           , "Franca" = "#b3cde0"
            , "Portugal" = "red")
 outrospaises <- cd28 %>% distinct(pais) %>% filter(!pais %in% names(cores)) %>% .$pais
 cores <- c(cores, setNames(rep("gray", length(outrospaises)), outrospaises))
